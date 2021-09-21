@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-      input {
-        color: rgb(229, 255, 0);
-        background: rgb(29, 3, 3);
-      }
-      .blue {
-        color: blue;
-        background: chartreuse;
-      }
-      #fname {
-        color: rgb(255, 0, 170);
-        background: rgb(140, 0, 255);
-      }
+        input {
+            color: rgb(229, 255, 0);
+            background: rgb(29, 3, 3);
+        }
+        
+        .blue {
+            color: blue;
+            background: chartreuse;
+        }
+        
+        #fname {
+            color: rgb(255, 0, 170);
+            background: rgb(140, 0, 255);
+        }
     </style>
     <title>Page Title</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
 
     <form action="/action_page.php">
-      <label class="blue">Primer nombre:</label><br />
-      <input class="blue" type="text" id="fname" name="fname" /><br />
-      <label for="lname">Segundo nombre:</label><br />
-      <input class="blue" type="text" id="lname" name="lname" /><br />
-      <label for="flastname">Primer apellido:</label><br />
-      <input type="text" id="flastname" name="flastname" /><br />
-      <label for="llastname">Segundo apellido:</label><br />
-      <input type="text" id="llastname" name="llastname" /><br /><br />
-      <label for="terminos">Terminos y condiciones:</label><br />
-      <input type="checkbox" id="terminos" name="terminos" /><br /><br />
-      <input class="blue" type="submit" value="Submit" />
+        <label class="blue">Primer nombre:</label><br />
+        <input class="blue" type="text" id="fname" name="fname" /><br />
+        <label for="lname">Segundo nombre:</label><br />
+        <input class="blue" type="text" id="lname" name="lname" /><br />
+        <label for="flastname">Primer apellido:</label><br />
+        <input type="text" id="flastname" name="flastname" /><br />
+        <label for="llastname">Segundo apellido:</label><br />
+        <input type="text" id="llastname" name="llastname" /><br /><br />
+        <label for="terminos">Terminos y condiciones:</label><br />
+        <input type="checkbox" id="terminos" name="terminos" /><br /><br />
+        <input class="blue" type="submit" value="Submit" />
     </form>
 
     <div class="container">
         <img src="google_img.jfif" alt="Trulli" width="500" height="333">
         <h2>Vertical (basic) form</h2>
         <form action="/action_page.php">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Enter email"
-              name="email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input
-              type="password"
-              class="form-control"
-              id="pwd"
-              placeholder="Enter password"
-              name="pwd"
-            />
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="remember" /> Remember me</label>
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember" /> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+    </div>
 
-    <button
-      type="button"
-      onclick="document.getElementById('demo').innerHTML = Date()"
-    >
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
       Click me to display Date and Time.
     </button>
     <p id="demo"></p>
 
     <button type="button" class="btn btn-success">Default</button>
-  </body>
+</body>
+
 </html>
